@@ -36,6 +36,9 @@
         "Cornel": "13/12/2009",
         "Hizkia": "10/10/2010"
     }
+    const quotes = {
+        "Cornel": "Whatever will be, will be."
+    }
     const hobbies = {
         "Hizkia": "Keyboard Enthusiast."
     }
@@ -51,6 +54,6 @@
     <div class="p-4 lg:p-24">
         <button class="text-3xl lg:text-5xl font-semibold text-zinc-800 cursor-pointer mr-6">Class 9A</button>
         <a class="text-3xl lg:text-5xl font-semibold text-zinc-500 cursor-pointer hover:text-zinc-600" href="/students/9b">Class 9B</a>
-        <Studentviewer class="9a" namesList={namesList} birthday={birthday} hobbies={hobbies}></Studentviewer>
+        <Studentviewer class="9a" namesList={namesList} birthday={birthday} hobbies={hobbies} quotes={quotes}></Studentviewer>
     </div>
 </main>
