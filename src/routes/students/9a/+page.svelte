@@ -1,5 +1,6 @@
 <script>
     import Topbar from "../../topbar.svelte";
+    import Studentviewer from "../../studentviewer.svelte";
     const namesList = [
         "Abraham",
         "Albert",
@@ -31,6 +32,13 @@
         "Widya",
         "Samuel"
     ];
+    const birthday = {
+        "Cornel": "13/12/2009",
+        "Hizkia": "10/10/2010"
+    }
+    const hobbies = {
+        "Hizkia": "Keyboard Enthusiast."
+    }
 </script>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Varela+Round&display=swap');
@@ -43,18 +51,6 @@
     <div class="p-4 lg:p-24">
         <button class="text-3xl lg:text-5xl font-semibold text-zinc-800 cursor-pointer mr-6">Class 9A</button>
         <a class="text-3xl lg:text-5xl font-semibold text-zinc-500 cursor-pointer hover:text-zinc-600" href="/students/9b">Class 9B</a>
-        <div class="text-3xl py-4 gap-3 grid grid-cols-3">
-            {#each namesList as name}
-                <div class="p-4 bg-zinc-200 border-b border-zinc-300 rounded-2xl">
-                    <span class="font-bold text-zinc-400 mr-4">
-                        {namesList.indexOf(name)+1}
-                    </span>
-                    <span>
-                        {name}
-                    </span>
-                    <div class="bg-zinc-100 p-12 rounded-2xl mt-2"></div>
-                </div>
-            {/each}
-        </div>
+        <Studentviewer class="9a" namesList={namesList} birthday={birthday} hobbies={hobbies}></Studentviewer>
     </div>
 </main>
