@@ -13,7 +13,7 @@
 </style>
 <main class="h-full bg-zinc-50">
     <Topbar></Topbar>
-    <div class="bg-blue-700 text-zinc-100 lg:p-24 p-8 py-4">
+    <div class="bg-blue-700 text-zinc-100 lg:p-12 p-8 py-4">
         <h1 class="text-lg lg:text-2xl">Reminder! <span class="font-semibold">{daysleft} days</span> left until graduation.</h1>
     </div>
     <div class="p-6 pt-12 lg:p-24 lg:pb-12">

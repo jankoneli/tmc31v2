@@ -1,8 +1,19 @@
+<script>
+    let show = $state("hidden");
+    function toggle(){
+        if(show == "hidden"){
+            show = "";
+        }else{
+            show = "hidden";
+        }
+    }
+</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-<header class="px-24 py-8 flex gap-x-2 border-b border-zinc-400 items-center lg:justify-start justify-center">
+<header class="lg:px-24 py-8 flex gap-x-2 border-b border-zinc-400 lg:justify-start justify-end">
     <a href="/">
-        <img src="/tmc31.png" alt="" srcset="" class="w-12 opacity-100 hover:opacity-50 duration-200    ">
+        <img src="/tmc31.png" alt="" srcset="" class="w-12 opacity-100 hover:opacity-50 duration-200">
     </a>
+    <button class="lg:hidden mr-8 ml-[25%] lg:ml-0 text-4xl text-zinc-500" onclick={toggle}><i class="bi bi-list"></i></button>
     <div class="hidden lg:flex ml-12 text-zinc-500 font-bold text-3xl items-center justify-between w-full">
         <div class="flex gap-x-8">
             <a href="/archives" class="hover:text-yellow-600 duration-200">Archives</a>
@@ -15,3 +26,12 @@
         </div>
     </div>
 </header>
+<div class="flex flex-col p-2 px-4 font-semibold text-zinc-900 {show}">
+    <a href="/archives">Archives</a>
+    <hr class="border-zinc-400 my-2">
+    <a href="/events">Events</a>
+    <hr class="border-zinc-400 my-2">
+    <a href="/students">Students</a>
+    <hr class="border-zinc-400 my-2">
+    <a href="/school">School</a>
+</div>
