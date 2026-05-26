@@ -8,8 +8,9 @@
 	:global(html, body) {
 		height: 100%;
 		width: 100%;
-		background: var(--color-zinc-100);
+		background: var(--color-zinc-50);
 	}
+
 </style>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
