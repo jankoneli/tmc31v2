@@ -40,9 +40,9 @@
 </style>
 <main>
     <Topbar></Topbar>
-    <div class="p-24">
-        <a class="text-5xl font-semibold text-zinc-500 cursor-pointer mr-6 hover:text-zinc-600" href="/students/9a">Class 9A</a>
-        <a class="text-5xl font-semibold text-zinc-800 cursor-pointer">Class 9B</a>
+    <div class="p-4 lg:p-24">
+        <a class="text-3xl lg:text-5xl font-semibold text-zinc-500 cursor-pointer mr-6 hover:text-zinc-600" href="/students/9a">Class 9A</a>
+        <a class="text-3xl lg:text-5xl font-semibold text-zinc-800 cursor-pointer">Class 9B</a>
         <Studentviewer class="9b" namesList={namesList} birthday={[]} hobbies={[]}></Studentviewer>
     </div>
 </main>
