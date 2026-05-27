@@ -11,9 +11,14 @@ export async function load ( {fetch} ) {
     });
     
     const albums = await res.json();
-    
+    const albumsredacted = [];
+    albums.forEach(element => {
+        if(element.description != "hidden"){
+            albumsredacted.push(element)
+        }
+    });
     // LOOK AT YOUR TERMINAL FOR THIS:
-    console.log("Immich Response:", albums); 
+    console.log("Immich Response:", albumsredacted); 
     
-    return { albums };
+    return { albums:albumsredacted };
 }
