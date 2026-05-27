@@ -5,6 +5,7 @@
     "": {
       "name": "tmc31v2",
       "dependencies": {
+        "bigger-picture": "^1.1.20",
         "luxon": "^3.7.2",
       },
       "devDependencies": {
@@ -192,6 +193,8 @@
     "aria-query": ["aria-query@5.3.1", "", {}, "sha512-Z/ZeOgVl7bcSYZ/u/rh0fOpvEpq//LZmdbkXyc7syVzjPAhfOa9ebsdTSjEBDU4vs5nC98Kfduj1uFo0qyET3g=="],
 
     "axobject-query": ["axobject-query@4.1.0", "", {}, "sha512-qIj0G9wZbMGNLjLmg1PT6v2mE9AH2zlnADJD/2tC6E00hgmhUOfEB6greHPAfLRSufHqROIUTkw6E+M3lH0PTQ=="],
+
+    "bigger-picture": ["bigger-picture@1.1.20", "", {}, "sha512-aKh1R8hdoh0d2AgIx0B4oomjJHJExDFzdwBQttUBbpZ9Ht31G6OMEohMjwqP6TMWTa6iirt4CQgrXffxim4v6w=="],
 
     "clsx": ["clsx@2.1.1", "", {}, "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA=="],
 

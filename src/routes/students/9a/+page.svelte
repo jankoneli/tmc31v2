@@ -1,6 +1,7 @@
 <script>
     import Topbar from "../../topbar.svelte";
     import Studentviewer from "../../studentviewer.svelte";
+    import Underbuilding from "../../underbuilding.svelte";
     const namesList = [
         "Abraham",
         "Albert",
@@ -51,6 +52,7 @@
 </style>
 <main>
     <Topbar></Topbar>
+    <Underbuilding></Underbuilding>
     <div class="p-4 lg:p-24">
         <button class="text-3xl lg:text-5xl font-semibold text-zinc-800 cursor-pointer mr-6">Class 9A</button>
         <a class="text-3xl lg:text-5xl font-semibold text-zinc-500 cursor-pointer hover:text-zinc-600" href="/students/9b">Class 9B</a>

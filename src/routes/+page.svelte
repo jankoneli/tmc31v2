@@ -26,11 +26,12 @@
             <img src="bg.jpg" alt="" srcset="" class="mt-12 rounded-xl w-full lg:h-128 hover:w-full object-cover lg:w-[70%] duration-300">
         </div>
     </div>
-    <div class="flex gap-x-4 lg:gap-x-24 px-8 lg:px-24 bg-blue-700">
+    <div class="flex gap-x-4 lg:gap-x-24 px-8 pb-8 lg:px-24 bg-blue-700">
         <div class="lg:pt-24 pt-12">
-            <h1 class="text-zinc-50 text-4xl lg:text-6xl font-bold">This is Tirtamarta Cinere</h1>
+            <h1 class="text-zinc-50 text-3xl lg:text-6xl font-bold">This is TMC Batch #31</h1>
+            <p class="lg:mt-12 text-zinc-50 lg:text-2xl mt-2">We are the 31st Batch of SMPK BPK Penabur-Tirtamarta Cinere. Together since 2023-2026</p>
         </div>
-        <div class="py-12 lg:py-24 ml-auto">
+        <div class="py-12 lg:py-24 ml-auto flex justify-center">
             <img src="/halftone_white.png" alt="" srcset="" class="w-160 ml-auto">
         </div>
     </div>

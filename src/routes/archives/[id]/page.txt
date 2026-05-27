@@ -1,0 +1,63 @@
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Varela+Round&display=swap');
+    *{
+        font-family: "Fredoka", sans-serif;
+    }
+</style>
+<script>
+    import Topbar from "../../topbar.svelte";
+    import BiggerPicture from "bigger-picture";
+    import "bigger-picture/css"
+    
+    // Destructure 'data' out of the props object
+    let { data } = $props(); 
+    let maxDisplay = $state(15)
+    let displayed = $derived(data.assets.slice(0, maxDisplay));
+
+    let bp;
+    $effect(() => {
+        bp = BiggerPicture({
+            target: document.body
+        })
+    })
+
+    function openGallery(e){
+        const link = e.target.closest("#images a");
+        if (!link) return;
+        e.preventDefault();
+        bp.open({
+            items: document.querySelectorAll("#images a"),
+            el: link
+        })
+    }
+
+</script>
+
+<main>
+    <Topbar></Topbar>
+    <h1 class="m-8 lg:m-24 lg:my-12 lg:text-4xl text-3xl font-semibold text-zinc-900"><a href="/archives" class="translate-y-0 hover:-translate-y-2 duration-200 block w-fit">Archives/</a><span class="text-zinc-500">{data.name}</span></h1>    
+    <div class="lg:p-24 lg:pt-0 p-8 py-8 pb-0 columns-2 lg:columns-5 space-y-4 gap-4" id="images" onclick={openGallery}>
+        {#each displayed as image}
+            <a class="block translate-y-0 hover:-translate-y-2 duration-200" href="/api/image/{image.id}" data-img="/api/image/{image.id}" data-width="{image.width}" data-height="{image.height}">
+                <img src="/api/thumb/{image.id}" alt="" srcset="" style="aspect-ratio: {image.width} / {image.height};" class="w-full rounded-lg opacity-0 duration-500" onload={(e) => e.currentTarget.classList.remove("opacity-0")}>
+            </a>
+        {/each}
+    </div>
+    <div class="flex justify-center">
+        <button class="bg-blue-600 text-zinc-50 p-2 px-3 font-semibold text-2xl rounded-lg border-b-2 border-blue-700 mb-4 hover:scale-95 cursor-pointer scale-100 duration-200" onclick={maxDisplay+=10}>
+            Load more
+        </button>
+    </div>
+    
+    <script>
+        $effect(() => {
+            let bp = BiggerPicture({
+                target: document.body
+            })
+
+            bp.open({
+                items: document.querySelectorAll("#images a"),
+            })
+        })
+    </script>
+</main>
