@@ -70,13 +70,13 @@
 
 <main>
     <Topbar></Topbar>
-    <h1 class="m-8 lg:m-24 lg:my-12 lg:text-4xl text-3xl font-semibold text-zinc-900">
+    <h1 class="m-4 lg:m-24 lg:my-12 lg:text-4xl text-3xl font-semibold text-zinc-900">
         <a href="/archives" class="translate-y-0 hover:-translate-y-2 duration-200 block w-fit">Archives/</a>
         <span class="text-zinc-500">{data.name}</span>
     </h1>    
     
     <div 
-        class="lg:p-24 lg:pt-0 p-8 py-8 grid grid-cols-2 lg:grid-cols-5 gap-4 alignment-start" 
+        class="lg:p-24 lg:pt-0 p-4 py-8 grid grid-cols-2 lg:grid-cols-5 gap-4 alignment-start" 
         id="images" 
         onclick={openGallery}
     >
