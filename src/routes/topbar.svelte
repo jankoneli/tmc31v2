@@ -26,12 +26,14 @@
         </div>
     </div>
 </header>
-<div class="flex flex-col p-2 px-4 font-semibold text-zinc-900 {show}">
-    <a href="/archives">Archives</a>
-    <hr class="border-zinc-400 my-2">
-    <a href="/events">Events</a>
-    <hr class="border-zinc-400 my-2">
-    <a href="/students">Students</a>
-    <hr class="border-zinc-400 my-2">
-    <a href="https://immich.tmc9a.my.id/share/ThwcZIcDoIrcFkz4lJgXI-HakJobFSoFuju9Y4qvSZLJItxd6kFYU4hjLaSlpbOid9c">School</a>
+<div class="flex flex-col font-semibold text-zinc-900 {show}">
+    <a href="/archives" class="p-2 px-4">Archives</a>
+    <hr class="border-zinc-400">
+    <a href="/events" class="p-2 px-4">Events</a>
+    <hr class="border-zinc-400">
+    <a href="/students" class="p-2 px-4">Students</a>
+    <hr class="border-zinc-400">
+    <a href="https://immich.tmc9a.my.id/share/ThwcZIcDoIrcFkz4lJgXI-HakJobFSoFuju9Y4qvSZLJItxd6kFYU4hjLaSlpbOid9c" class="p-2 px-4">School</a>
+    <hr class="border-zinc-400">
+    <a href="https://forms.gle/ZK8TQA1Ygw92RoF57" class="bg-blue-800 text-zinc-50 p-2 px-4">Submit Time Capsule</a>
 </div>

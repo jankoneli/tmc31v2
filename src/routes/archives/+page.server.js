@@ -1,6 +1,4 @@
-import { IMMICH_KEY } from "$env/static/private"
-
-const IMMICH_URL = "https://immich.tmc9a.my.id";
+import { IMMICH_KEY, IMMICH_URL } from "$env/static/private"
 
 export async function load ( {fetch} ) {
     const res = await fetch(IMMICH_URL + '/api/albums', {
